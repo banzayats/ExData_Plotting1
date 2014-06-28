@@ -15,7 +15,7 @@ plotdata <- subset(data, Date >= as.Date("2007-02-01") & Date < as.Date("2007-02
 x <- strptime(sprintf("%s %s", plotdata$Date, plotdata$Time), format="%Y-%m-%d %H:%M:%S")
 y1 <- plotdata$Sub_metering_1
 y2 <- plotdata$Sub_metering_2
-y3 <- plotdata$Sub_metering_
+y3 <- plotdata$Sub_metering_3
 # Get the range for the x and y axis 
 xrange <- range(x) 
 yrange <- range(y1, y2, y3) 
