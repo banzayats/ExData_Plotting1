@@ -27,7 +27,7 @@ Sys.setlocale("LC_TIME", "English")
 png("plot4.png")
 par(mfrow = c(2, 2))
 with(plotdata, {
-	plot(x, Global_active_power, type="l", col="black", xlab="", ylab="Global Active Power (kilowatts)")
+	plot(x, Global_active_power, type="l", col="black", xlab="", ylab="Global Active Power")
 	plot(x, Voltage, type="l", col="black", xlab="datetime", ylab="Voltage")
 	plot(xrange, yrange, type="n", xlab="", ylab="Energy sub metering")
 	lines(x, y1, type="l", col="black")
